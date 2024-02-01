@@ -1,0 +1,19 @@
+:snippets: ../../../target/snippets
+
+= REST API
+
+Method: GET
+Endpoint: /string
+Parameter: str
+
+Принимает к качестве единственного обязательного параметря символьную строку.
+Возвращает в формате GSON частоту вхождения символов в строку, переданную в параметре запроса в убывающем порядке.
+
+
+Пример работы сервиса на http://localhost:8080:
+
+.request
+include::{snippets}/home/http-request.adoc[]
+
+.response
+include::{snippets}/home/http-response.adoc[]
